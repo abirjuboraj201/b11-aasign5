@@ -14,7 +14,7 @@
 </head>
 <body class="bg-[#F4F7FF]  container mx-auto">
 
-    <header class="my-2">
+    <header class=" pt-5">
         <nav class="bg-white rounded-2xl  mx-16">
             <div class="navbar shadow-sm rounded-2xl px-4">
                 <img src="./assets/logo.png" alt="">
@@ -30,7 +30,7 @@
                       
                     
                     <div class="ml-3 bg-[#F4F7FF] rounded-full p-2 ">
-                        <img src="./assets/theme-btn.png" alt="">
+                        <img id="bg-color-btn" src="./assets/theme-btn.png" alt="">
                     </div>
                     
                 </div>
@@ -39,8 +39,8 @@
         </nav>
     </header>
 
-    <main class="mx-16 my-10 rounded-2xl grid grid-cols-12 gap-5">
-        <section class="p-4 col-span-9 bg-white rounded-3xl ">
+    <main class="mx-16 py-10 rounded-2xl grid grid-cols-12 gap-5">
+        <section class="p-10 col-span-9 bg-white rounded-3xl ">
             <section class="grid grid-cols-8 gap-3">
                 <div class="flex items-center gap-3 bg-[#F4F7FF] rounded-2xl p-2 col-span-2">
                     <div class="">
@@ -49,17 +49,17 @@
     
                     <div>
                         <h3 class="text-sm">Task Assigned</h3>
-                        <h2  class="font-bold text-lg">0<span id="assigned-task">5</span></h2>
+                        <h2  class="font-bold text-lg">0<span id="assigned-task">6</span></h2>
                     </div>
                 </div>
     
     
-                <div class="flex items-center bg-blue-400 p-2 rounded-2xl col-span-4">
+                <div class="flex items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] px-10 py-3 rounded-2xl col-span-4">
                     <div>
                         <img src="./assets/board.png" alt="">
                     </div>
                     <div>
-                        <p class="text-white">Discover Something New Today!</p>
+                        <p class="text-white text-xl">Discover Something New Today!</p>
                     </div>
                 </div>
     
@@ -69,21 +69,21 @@
                     </div>
     
                     <div>
-                        <h3>Wed,</h3>
-                        <h3 class="font-bold">July 28 2025</h3>
+                        <h3 id="day"></h3>
+                        <h3 id="date" class="font-bold"></h3>
                     </div>
                 </div>
             </section>
 
             <!-- card section -->
-             <section class="mt-5 grid grid-cols-3 gap-5">
+             <section class="mt-16 grid grid-cols-3 gap-5">
                 <!-- card-1 -->
                 <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
                     <div class="card-body">
-                        <p class="bg-white rounded-lg w-20 px-3 py-1">ShopEase</p>
+                        <p class="bg-white rounded-lg w-20 px-2 py-1 text-center">ShopEase</p>
                         <h2 id="title" class="card-title">Fix Mobile Button Issue </h2>
                         <div class="bg-white rounded-lg">
-                            <p class="p-2 opacity-50  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                            <p class="p-2 opacity-50 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly </p>
                         </div>
                         <div class="flex mt-2">
                             
@@ -93,7 +93,7 @@
                             </div>
                             
                             <div class=" ">
-                                <button class="btn btn-primary task-btn ">Completed</button>
+                                <button class="btn  task-btn bg-[#3752FD] text-white rounded-lg">Completed</button>
                             </div>
 
                         </div>
@@ -102,7 +102,7 @@
                 <!-- card-2 -->
                 <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
                     <div class="card-body">
-                        <p class="bg-white rounded-lg w-20 px-3 py-1">CloudSync</p>
+                        <p class="bg-white rounded-lg w-20 px-2 py-1 text-center">CloudSync</p>
                         <h2 class="card-title">Add Dark Mode </h2>
                         <div class="bg-white rounded-lg">
                             <p class="p-2 opacity-50  ">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect</p>
@@ -115,7 +115,7 @@
                             </div>
                             
                             <div class=" ">
-                                <button class="btn btn-primary task-btn">Completed</button>
+                                <button class="btn  bg-[#3752FD] text-white rounded-lg task-btn">Completed</button>
                             </div>
 
                         </div>
@@ -124,7 +124,7 @@
                 <!-- card-3 -->
                 <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
                     <div class="card-body">
-                        <p class="bg-white rounded-lg w-20 px-3 py-1">SwiftPay</p>
+                        <p class="bg-white rounded-lg w-20 px-2 text-center py-1">SwiftPay</p>
                         <h2 class="card-title">Optimize  Home page  </h2>
                         <div class="bg-white rounded-lg">
                             <p class="p-2 opacity-50  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
@@ -137,7 +137,73 @@
                             </div>
                             
                             <div class=" ">
-                                <button class="btn btn-primary task-btn">Completed</button>
+                                <button class="btn  bg-[#3752FD] text-white rounded-lg task-btn">Completed</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
+                    <div class="card-body">
+                        <p class="bg-white rounded-lg w-20 px-2 text-center py-1">Meta</p>
+                        <h2 class="card-title">Add new emoji 🤲</h2>
+                        <div class="bg-white rounded-lg">
+                            <p class="p-2 opacity-50  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="flex mt-2">
+                            
+                            <div class="flex-1">
+                                <p class="opacity-70">Deadline</p>
+                                <p class="font-bold">21 March 2025</p>
+                            </div>
+                            
+                            <div class=" ">
+                                <button class="btn  bg-[#3752FD] text-white rounded-lg task-btn">Completed</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
+                    <div class="card-body">
+                        <p class="bg-white rounded-lg w-24 px-2 text-center py-1">Google LLC</p>
+                        <h2 class="card-title">Integrate OpenAI API </h2>
+                        <div class="bg-white rounded-lg">
+                            <p class="p-2 opacity-50  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="flex mt-2">
+                            
+                            <div class="flex-1">
+                                <p class="opacity-70">Deadline</p>
+                                <p class="font-bold">21 March 2025</p>
+                            </div>
+                            
+                            <div class=" ">
+                                <button class="btn  bg-[#3752FD] text-white rounded-lg task-btn">Completed</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
+                    <div class="card-body">
+                        <p class="bg-white rounded-lg w-20 px-2 text-center py-1">Glassdoar</p>
+                        <h2 class="card-title">Improve Job searching </h2>
+                        <div class="bg-white rounded-lg">
+                            <p class="p-2 opacity-50  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <div class="flex mt-2">
+                            
+                            <div class="flex-1">
+                                <p class="opacity-70">Deadline</p>
+                                <p class="font-bold">21 March 2025</p>
+                            </div>
+                            
+                            <div class=" ">
+                                <button class="btn  bg-[#3752FD] text-white rounded-lg task-btn">Completed</button>
                             </div>
 
                         </div>
@@ -146,7 +212,7 @@
              </section>
         </section>
 
-        <section id="activity-log" class="p-4 col-span-3 bg-white  rounded-3xl">
+        <section id="activity-log" class="py-5 col-span-3 bg-white  rounded-3xl">
             <div class="flex items-center gap-3 mb-4 justify-center">
                  <div>
                      <img src="./assets/activity.png" alt="">
@@ -156,15 +222,22 @@
                  </div>
             </div>
              
-             <div class="text-center">
-                <button id="activity-log-btn" class="btn btn-primary ">Clear History</button>
+             <div class="text-center mb-4">
+                <button id="activity-log-btn" class="btn  bg-[#3752FD] text-white rounded-lg ">Clear History</button>
+             </div>
+
+             <hr class="opacity-20">
+
+             <div id="activity-log-history" class="p-4">
+
              </div>
          </section>
 
        
     </main>
 
-    
- <script src="./js/task.js"></script>   
+ <script src="./js/task.js"></script> 
+ <script src="./js/theme.js"></script> 
+ <script src="./js/functions.js"></script> 
 </body>
 </html>
