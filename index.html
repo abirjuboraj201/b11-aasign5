@@ -49,7 +49,7 @@
     
                     <div>
                         <h3 class="text-sm">Task Assigned</h3>
-                        <h2 id="assigned-task"  class="font-bold text-lg"><span>05</span></h2>
+                        <h2  class="font-bold text-lg">0<span id="assigned-task">5</span></h2>
                     </div>
                 </div>
     
@@ -81,7 +81,7 @@
                 <div class="card  bg-[#F4F7FF] card-md shadow-sm ">
                     <div class="card-body">
                         <p class="bg-white rounded-lg w-20 px-3 py-1">ShopEase</p>
-                        <h2 class="card-title">Fix Mobile Button Issue </h2>
+                        <h2 id="title" class="card-title">Fix Mobile Button Issue </h2>
                         <div class="bg-white rounded-lg">
                             <p class="p-2 opacity-50  ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         </div>
@@ -93,7 +93,7 @@
                             </div>
                             
                             <div class=" ">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="btn btn-primary task-btn ">Completed</button>
                             </div>
 
                         </div>
@@ -115,7 +115,7 @@
                             </div>
                             
                             <div class=" ">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="btn btn-primary task-btn">Completed</button>
                             </div>
 
                         </div>
@@ -137,7 +137,7 @@
                             </div>
                             
                             <div class=" ">
-                                <button class="btn btn-primary">Completed</button>
+                                <button class="btn btn-primary task-btn">Completed</button>
                             </div>
 
                         </div>
@@ -146,7 +146,7 @@
              </section>
         </section>
 
-        <section class="p-4 col-span-3 bg-white text-center rounded-3xl">
+        <section id="activity-log" class="p-4 col-span-3 bg-white  rounded-3xl">
             <div class="flex items-center gap-3 mb-4 justify-center">
                  <div>
                      <img src="./assets/activity.png" alt="">
@@ -156,13 +156,15 @@
                  </div>
             </div>
              
-             <button class="btn btn-primary">Clear History</button>
+             <div class="text-center">
+                <button id="activity-log-btn" class="btn btn-primary ">Clear History</button>
+             </div>
          </section>
 
        
     </main>
 
     
-    
+ <script src="./js/task.js"></script>   
 </body>
 </html>
