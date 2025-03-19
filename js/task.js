@@ -22,6 +22,11 @@ for(const taskButton of taskButtons)
         tasks.innerText = remainTasks;
 
         completeTasks.innerText = totalTaskCompleted;
+
+        if(remainTasks === 0)
+            {
+                alert('Congrats!! You have completed all the current task');
+            }
         
         
         const cardTitle = taskButton.parentElement.parentElement.parentElement.childNodes[3].innerText
@@ -37,6 +42,9 @@ for(const taskButton of taskButtons)
         `
         
         document.getElementById('activity-log-history').appendChild(div);
+
+
+        
         
     });
 
