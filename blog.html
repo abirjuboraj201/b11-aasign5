@@ -8,10 +8,21 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .poppins{
+            font-family: "Poppins", sans-serif;
+            
+        }
+    </style>
 
 
 </head>
-<body class="bg-[#F4F7FF]  container mx-auto">
+<body class="bg-[#F4F7FF] poppins  container mx-auto">
 
 
     <header class="pt-5">
@@ -29,7 +40,7 @@
     </header>
 
     <main class="mt-10 mx-24">
-        <section>
+        <section class="pb-5">
             <h1 class="text-center text-xl font-bold mb-10">Blogs</h1>
 
             <!-- question section -->
@@ -40,7 +51,18 @@
 
                     <hr class="border-dashed opacity-40 mb-3">
 
-                    <p class="px-4 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, culpa.</p>
+                    <p class="px-4">There are several ways to select an element in the DOM. They are - </p>
+
+                    <ol class="px-8 py-3 list-decimal marker:font-bold">
+                        <li><span class="font-bold">getElementById:</span> It selects an element by it's unique id attribute.</li>
+                        <li><span class="font-bold">getElementsByClassName:</span> It selects elements by their class name.</li>
+                        <li><span class="font-bold">getElementsByTagName:</span> It selects elements by their tag names.</li>
+                        <li><span class="font-bold">getElementsByName:</span> It selects elements by their names.</li>
+                        <li><span  class="font-bold">querySelector:</span> It selects the first element that has the specified css selector and returns null if no such element is found.</li>
+                        <li><span  class="font-bold">querySelectorAll:</span> It selects all the elements that have the specified css selector and returns empty NodeList if no such elements are found.</li>
+                    </ol>
+
+
                 </div>
                 <!-- question-2 -->
                 <div class="bg-white shadow-lg rounded-lg mb-5">
@@ -48,7 +70,8 @@
 
                     <hr class="border-dashed opacity-40 mb-3">
 
-                    <p class="px-4 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, libero.</p>
+                    <p class="px-5 pb-5"><span class="font-bold">innerHTML</span> allows an user to write basic HTML tags, attributes within any element. <span class="font-bold">innerText</span> helps an user to get or set any text to any element. it does not show if there are any hidden text contents. On the other hand, <span class="font-bold">textContent</span> gives user raw text meaning it will show any hidden text along with visible text. </p>
+                    
                 </div>
                 <!-- question-3 -->
                 <div class="bg-white shadow-lg rounded-lg mb-5">
@@ -56,7 +79,7 @@
 
                     <hr class="border-dashed opacity-40 mb-3">
 
-                    <p class="px-4 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, culpa.</p>
+                    <p class="px-4 pb-2">Event delegation is a technique where we add a single event listener to the parent element instead of adding event listener to multiple child elements.</p>
                 </div>
                 <!-- question-4 -->
                 <div class="bg-white shadow-lg rounded-lg mb-5">
@@ -64,7 +87,38 @@
 
                     <hr class="border-dashed opacity-40 mb-3">
 
-                    <p class="px-4 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, libero.</p>
+                    <p class="px-4 pb-2">When an event starts at the target element or child element and moves up or bubbles up to the root element or parent element, the phenomena is known as event bubbling.</p>
+                </div>
+                <!-- question-5 -->
+                <div class="bg-white shadow-lg rounded-lg mb-5">
+                    <h1 class="font-bold text-md mb-2 p-4">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+
+                    <hr class="border-dashed opacity-40 mb-3">
+
+                    <p class="px-4">There are several methods to create, add and remove elements using JavaScript. They are - </p>
+
+                    <ol class="px-8 py-3 list-decimal marker:font-bold">
+                        <li><span class="font-bold">Create Element</span>
+                            <ul class="list-disc pl-5">
+                                <li><span class="font-bold">document.createElement(tagName)</span> <br>Ex.: Const newDiv = document.createElement('div');</li>
+                            </ul>
+                        </li>
+
+                        <li><span class="font-bold">Add Element</span>
+                            <ul class="pl-5 list-disc">
+                                <li><span class="font-bold">appendChild():</span> Adds new element to the parent element. <br>Ex.: document.body.appendchild(newDiv);</li>
+                                <li><span class="font-bold">append():</span> Adds multiple elements at once. <br>Ex.: document.body.append(newDiv, anotherDiv, 'can also add some texts');</li>
+                            </ul>
+                        </li>
+
+                        <li><span class="font-bold">Remove Element</span>
+                            <ul class="pl-5 list-disc">
+                                <li><span class="font-bold">removeChild():</span> Removes a child element from a parent element. <br>Ex.: document.body.removeChild(newDiv);</li>
+                                <li><span class="font-bold">remove():</span> Directly removes the element. <br>Ex.: newDiv.remove();</li>
+                            </ul>
+                        </li>
+
+                    </ol>
                 </div>
              </section>
         </section>

@@ -1,4 +1,6 @@
 
+// random background color
+
 document.getElementById('bg-color-btn').addEventListener('click', function(event){
     event.preventDefault();
 

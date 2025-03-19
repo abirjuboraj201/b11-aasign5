@@ -1,4 +1,6 @@
 
+// for completion of tasks
+
 const taskButtons = document.querySelectorAll(".task-btn");
 
 for(const taskButton of taskButtons)
@@ -32,24 +34,22 @@ for(const taskButton of taskButtons)
         const cardTitle = taskButton.parentElement.parentElement.parentElement.childNodes[3].innerText
 
 
-        const now = new Date();
-        const time = now.toLocaleTimeString();
+        const currentDate = new Date();
+        const time = currentDate.toLocaleTimeString();
 
         const div = document.createElement('div');
 
         div.innerHTML = `
-        <h2 class = "bg-[#F4F7FF] mt-5 p-2 rounded-lg"> You have successfully completed the task ${cardTitle} at ${time};
+        <h5 class = "bg-[#F4F7FF] mt-5 p-2 rounded-lg text-sm"> You have successfully completed the task ${cardTitle} at ${time};</h5>
         `
         
         document.getElementById('activity-log-history').appendChild(div);
-
-
-        
-        
+  
     });
 
 }
 
+// clearing log history
 
 document.getElementById('activity-log-btn').addEventListener('click', function(event){
     event.preventDefault();

@@ -1,19 +1,20 @@
 // function for date
+
 function updateDate() {
 
-    const now = new Date();
+    const currentDate = new Date();
 
     
-    const day = now.toLocaleDateString('en-US', { weekday: 'short' }); 
-    const month = now.toLocaleDateString('en-US', { month: 'short' });
-    const dayNum = now.getDate();
-    const year = now.getFullYear();
+    const day = currentDate.toLocaleDateString('en-US', { weekday: 'short' }); 
+    const month = currentDate.toLocaleDateString('en-US', { month: 'short' });
+    const dayNumber = currentDate.getDate();
+    const year = currentDate.getFullYear();
     
     
     document.getElementById("day").innerText = day;
     document.getElementById("date").innerHTML = `
     ${month}
-    ${dayNum} 
+    ${dayNumber} 
     ${year}`;
 }
 
