@@ -13,9 +13,7 @@ function updateDate() {
     
     document.getElementById("day").innerText = day;
     document.getElementById("date").innerHTML = `
-    ${month}
-    ${dayNumber} 
-    ${year}`;
+    <p> ${month} ${dayNumber}  ${year} </P>`;
 }
 
 updateDate();
